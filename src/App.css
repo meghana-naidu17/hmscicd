@@ -1,0 +1,1077 @@
+/* ================= TOP BAR ================= */
+.top-bar {
+  background: #f8c8dc;
+  color: #5a3e4d;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10%;
+  font-size: 14px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #fff0f6;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
+}
+
+.logo {
+  color: #d63384;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6c4a5c;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff69b4;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(255,192,203,0.6), rgba(255,192,203,0.6)),
+    url("./assets/images/hos.jpg") center/cover no-repeat;
+  background-size: cover;
+  color: #4a2c3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.hero button {
+  margin-top: 20px;
+  width: 160px;
+  padding: 12px;
+  background: #ff85a2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ff5c8a;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #f8c8dc;
+  color: #5a3e4d;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ================= DASHBOARD ================= */
+.sidebar {
+  width: 220px;
+  background: #f4a6c1;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffe6f0;
+}
+
+/* ================= CONTACT ================= */
+/* ================= CONTACT SECTION IMPROVED ================= */
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fff6fa);
+}
+
+/* WRAPPER */
+.contact-modern-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* CARD */
+.contact-card-modern {
+  background: #ffffff;
+  width: 1000px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px rgba(255, 182, 193, 0.25);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.contact-card-modern:hover {
+  transform: translateY(-8px);
+}
+
+/* LEFT SIDE */
+.contact-left {
+  padding: 60px;
+  background: linear-gradient(135deg, #ffb6c1, #ffc8dd);
+  color: #5a3e4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-left h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  border: 1px solid #ffc2d1;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #ff85a2;
+  box-shadow: 0 0 8px rgba(255, 133, 162, 0.3);
+}
+
+.contact-right textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-right button {
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  background: #ff85a2;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #ff5c8a;
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-card-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 40px;
+  }
+}
+/* ================= LOGIN PAGE ================= */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ec, #fff0f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: white;
+  width: 900px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(255, 182, 193, 0.25);
+}
+
+.login-left {
+  width: 50%;
+  background: linear-gradient(135deg, #ff85a2, #ffb6c1);
+  color: white;
+  padding: 60px 50px;
+}
+
+.login-right {
+  width: 50%;
+  padding: 60px 50px;
+}
+
+.login-right input {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 1px solid #ffc2d1;
+}
+
+.login-right button {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #ff85a2;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-right button:hover {
+  background: #ff5c8a;
+}
+
+/* ================= SIGNUP PAGE ================= */
+.signup-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ec, #fff0f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-left {
+  background: linear-gradient(135deg, #ff85a2, #ffb6c1);
+}
+
+.signup-right h2 {
+  color: #d63384;
+}
+
+.signup-right button {
+  background: #ff85a2;
+  border-radius: 20px;
+}
+
+.signup-right button:hover {
+  background: #ff5c8a;
+}
+/* ================= COMMON HEADER BASE ================= */
+
+.welcome-text {
+  font-weight: 600;
+  color: #d63384;
+}
+
+/* ===== TOP BAR (ALL PANELS) ===== */
+
+.admin-top-bar,
+.doctor-top-bar,
+.patient-top-bar {
+  padding: 12px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #5a3e4d;
+  font-size: 14px;
+}
+
+/* Individual Top Bar Colors */
+
+.admin-top-bar {
+  background: linear-gradient(90deg, #ff85a2, #ffb6c1);
+}
+
+.doctor-top-bar {
+  background: linear-gradient(90deg, #ff9eb5, #ffc8dd);
+}
+
+.patient-top-bar {
+  background: linear-gradient(90deg, #ffc8dd, #ffe4ec);
+}
+
+
+/* ===== NAVBAR (ALL PANELS) ===== */
+
+.admin-navbar,
+.doctor-navbar,
+.patient-navbar {
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff6fa;
+  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.25);
+}
+
+
+/* ===== LOGOS ===== */
+
+.admin-logo,
+.doctor-logo,
+.patient-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+
+/* ===== NAV LINKS ===== */
+
+.admin-nav-links,
+.doctor-nav-links,
+.patient-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.admin-nav-links li,
+.doctor-nav-links li,
+.patient-nav-links li {
+  list-style: none;
+}
+
+.admin-nav-links a,
+.doctor-nav-links a,
+.patient-nav-links a {
+  text-decoration: none;
+  color: #6c4a5c;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.admin-nav-links a:hover,
+.doctor-nav-links a:hover,
+.patient-nav-links a:hover {
+  color: #ff69b4;
+}
+
+
+/* ===== LOGOUT BUTTON ===== */
+
+.logout-btn {
+  background: #ff85a2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: #ff5c8a;
+  transform: scale(1.05);
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+  .admin-navbar,
+  .doctor-navbar,
+  .patient-navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .admin-nav-links,
+  .doctor-nav-links,
+  .patient-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .admin-top-bar,
+  .doctor-top-bar,
+  .patient-top-bar {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+/* ================= REPORTS PAGE ================= */
+
+.report-page {
+  padding: 60px 8%;
+  background: #fff0f6;
+  min-height: 70vh;
+}
+
+.report-page h1 {
+  color: #d63384;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Report List */
+
+.report-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.report-list li {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
+  font-weight: 500;
+  color: #5a3e4d;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.report-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 182, 193, 0.35);
+}
+/* ================= ADMIN PAGE COMMON ================= */
+
+.admin-page {
+  padding: 50px 8%;
+  background: #fff0f6;
+  min-height: 70vh;
+}
+
+.admin-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.admin-page-header h1 {
+  color: #d63384;
+}
+
+/* ================= TABLE ================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
+}
+
+.admin-table th {
+  background: #ffe4ec;
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.admin-table tr:hover {
+  background: #fff5f9;
+}
+
+/* ================= BUTTONS ================= */
+
+.primary-btn {
+  background: #ff85a2;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #ff5c8a;
+}
+
+.edit-btn {
+  background: #ffc107;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.danger-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.danger-btn:hover {
+  background: #b02a37;
+}
+/* ================= ADMIN LAYOUT ================= */
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background: #fff0f6;
+}
+
+/* ================= SIDEBAR ================= */
+
+.admin-sidebar {
+  width: 250px;
+  background: #9d174d;   /* Dark Pink */
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-sidebar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fbcfe8; /* Light Pink */
+}
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: #fce7f3;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.admin-sidebar a:hover {
+  background: #be185d;
+  color: #fff;
+}
+
+.admin-sidebar a.active {
+  background: #f472b6;  /* Bright Pink */
+  color: white;
+  font-weight: 600;
+}
+
+/* ================= CONTENT AREA ================= */
+
+.admin-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* ================= TABLE DESIGN ================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+.admin-table thead {
+  background: #ec4899;  /* Pink */
+  color: white;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.admin-table th {
+  font-weight: 600;
+}
+
+.admin-table tbody tr {
+  border-bottom: 1px solid #fbcfe8;
+}
+
+.admin-table tbody tr:hover {
+  background: #ffe4ec;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.danger {
+  background: #e11d48;  /* Deep Pink */
+  color: white;
+}
+
+button:not(.danger) {
+  background: #ec4899;  /* Pink */
+  color: white;
+}
+
+/* ================= PAGE TITLE ================= */
+
+.admin-content h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #9d174d;
+}
+/* ================= MANAGE PATIENTS CARD ================= */
+
+.admin-content h1 {
+  margin-bottom: 20px;
+}
+
+.patient-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1);
+  border: 1px solid #fbcfe8;
+}
+
+/* ================= TABLE ================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.admin-table thead {
+  background: linear-gradient(90deg, #ec4899, #f472b6);
+  color: white;
+}
+
+.admin-table th {
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.admin-table td {
+  padding: 16px;
+  border-bottom: 1px solid #fce7f3;
+}
+
+.admin-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.admin-table tbody tr:hover {
+  background: #fff0f6;
+  transform: scale(1.01);
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* View Button */
+button:not(.danger) {
+  background: #ec4899;
+  color: white;
+}
+
+button:not(.danger):hover {
+  background: #be185d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.3);
+}
+
+/* Remove Button */
+button.danger {
+  background: #fca5a5;
+  color: #7f1d1d;
+}
+
+button.danger:hover {
+  background: #ef4444;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3);
+}
+/* Center the Manage Patients section */
+
+.admin-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+}
+
+/* Center title */
+.admin-content h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Patient card width control */
+.patient-card {
+  width: 900px;          /* control width */
+  max-width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1);
+  border: 1px solid #fbcfe8;
+}
+.admin-layout {
+  min-height: 100vh;
+  background: #fff0f6;
+}
+
+.admin-content {
+  padding: 50px 20px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+/* ===== TOP CONTACT BAR ===== */
+.top-bar {
+  background-color: #e8a9bd;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+  font-size: 14px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #f6dbe3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d63384;
+  margin: 0;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d63384;
+}
+
+/* ===== OPTIONAL: STICKY HEADER ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+/* ===== PAGE BACKGROUND ===== */
+.departments-page {
+  background-color: #fff5f8;
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+/* ===== HEADER SECTION ===== */
+.departments-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.departments-header h1 {
+  font-size: 36px;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.departments-header p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== CONTAINER ===== */
+.departments-container {
+  width: 85%;
+  margin: auto;
+}
+
+/* ===== GRID ===== */
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.department-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== IMAGE ===== */
+.department-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== CONTENT ===== */
+.department-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.department-content h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.department-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+/* Main Container */
+.dashboard-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Headings */
+.dashboard-container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #be185d;
+}
+
+.dashboard-container p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.dashboard-container h2 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  color: #9d174d;
+  font-size: 20px;
+}
+
+/* Patient Info Card */
+.patient-info-card {
+  background: #fff0f6;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border-left: 5px solid #ec4899;
+}
+
+.patient-info-card h2 {
+  margin-bottom: 15px;
+}
+
+.patient-info-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Table Styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dashboard-table th {
+  background: #fbcfe8;
+  color: #9d174d;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.dashboard-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.dashboard-table tr:hover {
+  background: #fff5f9;
+}
+
+/* Status Styles */
+.status-confirmed {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+/* Report List */
+.report-list {
+  list-style: none;
+  padding: 0;
+}
+
+.report-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff0f6;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* View Button */
+.view-btn {
+  background: #ec4899;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #be185d;
+  transform: scale(1.05);
+}
